@@ -23,7 +23,7 @@ int[] StringToNum(string input)
             count++;
         }
     }
-        int[] numbers = new int [count];
+    int[] num = new int [count];
     int index = 0;
     for (int i = 0; i < input.Length; i++)
     {
@@ -42,10 +42,9 @@ int[] StringToNum(string input)
             break;
         }
         }
-        numbers[index] = Convert.ToInt32(temp);
+        num[index] = Convert.ToInt32(temp);
         index++;
     }
-    return numbers;
+    return num;
 }
-Console.WriteLine();
 Console.WriteLine($"Количество значений больше нуля = {sum}");
