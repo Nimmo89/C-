@@ -2,7 +2,7 @@
 [3, 7, 23, 12] -> 19
 [-4, -6, 89, 6] -> 0 */
 
-/* Console.Clear();
+Console.Clear();
 Console.Write("Введите длинну массива: ");
 int a = int.Parse(Console.ReadLine()!);
 int[] randomArray = new int[a];
@@ -16,4 +16,4 @@ for (int i = 1; i < randomArray.Length; i += 2)
     {
     sumIndex += randomArray[i];
     }
-Console.Write($"Cумма элементов, стоящих на нечётных позициях: {sumIndex}"); */
+Console.Write($"Cумма элементов, стоящих на нечётных позициях: {sumIndex}");
