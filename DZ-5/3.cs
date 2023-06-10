@@ -11,6 +11,7 @@ for (int i = 0; i < randomArray.Length; i++)
     randomArray[i] = Math.Round(new Random().NextDouble() * (end - begin) + begin, 2);
     Console.Write(randomArray[i] + ", ");
     }
+Console.WriteLine();
 double min = randomArray[0];
 double max = randomArray[0];
 int b = 1;

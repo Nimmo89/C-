@@ -11,9 +11,10 @@ for (int i = 0; i < randomArray.Length; i++)
     randomArray[i] = new Random().Next(0,50);
     Console.Write(randomArray[i] + ", ");
     }
+Console.WriteLine();
 int sumIndex = 0;
 for (int i = 1; i < randomArray.Length; i += 2)
     {
     sumIndex += randomArray[i];
     }
-Console.Write($"Cумма элементов, стоящих на нечётных позициях: {sumIndex}");
+Console.WriteLine($"Cумма элементов, стоящих на нечётных позициях: {sumIndex}");
