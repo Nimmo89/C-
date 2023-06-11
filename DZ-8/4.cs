@@ -5,7 +5,7 @@
 27(0,0,1) 90(0,1,1)
 26(1,0,1) 55(1,1,1) */
 
-/* Console.Clear();
+Console.Clear();
 Console.Write("Введите размеры массива: ");
 int[] size = Console.ReadLine()!.Split().Select(x => int.Parse(x)).ToArray();
 int[,,] array = new int[size[0], size[1], size[2]];
@@ -61,4 +61,4 @@ void PrintArra (int[,,] array)
     Console.WriteLine(); 
 }
 InputMatrix(array);
-PrintArra(array); */
+PrintArra(array);

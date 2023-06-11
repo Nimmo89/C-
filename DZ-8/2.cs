@@ -6,7 +6,7 @@
 5 2 6 7
 Программа считает сумму элементов в каждой строке и выдаёт номер строки с наименьшей суммой элементов: 1 строка */
 
-/* Console.Clear();
+Console.Clear();
 Console.Write("Введите размеры массива: ");
 int[] size = Console.ReadLine()!.Split().Select(x => int.Parse(x)).ToArray();
 int[,] arr = new int[size[0], size[1]];
@@ -50,4 +50,4 @@ int sum = SumLine(arr, 0);
         minSum = i+1;
     }
 }
-Console.WriteLine($"\n{minSum} - строкa с наименьшей суммой элементов "); */
+Console.WriteLine($"\n{minSum} - строкa с наименьшей суммой элементов ");

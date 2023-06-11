@@ -8,7 +8,7 @@
 9 5 3 2
 8 4 4 2 */
 
-/* Console.Clear();
+Console.Clear();
 Console.Write("Введите размеры массива: ");
 int[] size = Console.ReadLine()!.Split().Select(x => int.Parse(x)).ToArray();
 int[,] arr = new int[size[0], size[1]];
@@ -53,4 +53,4 @@ InputMatrix(arr);
 PrintArra(arr);
 Console.WriteLine();
 SortToLow(arr);
-PrintArra(arr); */
+PrintArra(arr);

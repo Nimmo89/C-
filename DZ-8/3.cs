@@ -6,7 +6,7 @@
 18 20
 15 18 */
 
-/* Console.Clear();
+Console.Clear();
 Console.Write("Введите размеры массива: ");
 int[] size = Console.ReadLine()!.Split().Select(x => int.Parse(x)).ToArray();
 void InputMatrix(int[,] arr)
@@ -56,4 +56,4 @@ void MultiplyMatrix(int[,] firstMartrix, int[,] secomdMartrix, int[,] resultMatr
 int[,] resultMatrix = new int[size[0], size[1]];
 MultiplyMatrix(firstMartrix, secomdMartrix, resultMatrix);
 Console.WriteLine($"Произведение первой и второй матриц:");
-PrintArra(resultMatrix); */
+PrintArra(resultMatrix);

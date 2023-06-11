@@ -5,7 +5,7 @@
 11 16 15 06
 10 09 08 07 */
 
-/* Console.Clear();
+Console.Clear();
 int n = 4;
 int[,] matrix = new int[n, n];
 int temp = 1;
@@ -37,4 +37,4 @@ void WriteArray (int[,] array)
         Console.WriteLine();
     }
 }
-WriteArray(matrix); */
+WriteArray(matrix);
