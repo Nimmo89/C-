@@ -9,7 +9,7 @@ Console.Write("Введите N: ");
 int n = int.Parse(Console.ReadLine()!);
 int sum = 0;
 for (int i = m; i <= n; i++)
-    {
-        sum += i; // добавляем каждый элемент к сумме
-    }
+{
+    sum += i; // добавляем каждый элемент к сумме
+}
 Console.WriteLine($"Сумма чисел от {m} до {n} равна: {sum}");
