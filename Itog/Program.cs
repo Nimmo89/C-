@@ -1,4 +1,5 @@
-﻿Console.WriteLine("Введите элементы массива, разделяя их пробелом:");
+﻿Console.Clear();
+Console.WriteLine("Введите элементы массива, разделяя их пробелом:");
 string input = Console.ReadLine()!;
 string[] inputArray = input.Split(' ');
 string[] FilterStrings(string[] inputArray)
