@@ -1,33 +1,35 @@
-﻿    static string[] FilterStrings(string[] strings)
+﻿
+Console.WriteLine("Введите элементы массива, разделяя их пробелом:");
+string input = Console.ReadLine()!;
+string[] inputArray = input.Split(' ');
+
+string[] FilterStrings(string[] inputArray)
+{
+    int count = 0;
+    // Подсчет количества строк, удовлетворяющих условию
+    for (int i = 0; i < inputArray.Length; i++)
     {
-        int count = 0;
-        for (int i = 0; i < strings.Length; i++)
+        if (inputArray[i].Length <= 3)
         {
-            if (strings[i].Length <= 3)
-            {
-                count++;
-            }
+            count++;
         }
-
-        string[] result = new string[count];
-        int index = 0;
-        for (int i = 0; i < strings.Length; i++)
-        {
-            if (strings[i].Length <= 3)
-            {
-                result[index] = strings[i];
-                index++;
-            }
-        }
-
-        return result;
     }
-        Console.WriteLine("Введите строки, разделенные пробелом:");
-        string input = Console.ReadLine();
-        string[] inputStrings = input.Split();
-        string[] filteredStrings = FilterStrings(inputStrings);
-        Console.WriteLine("Результат:");
-        foreach (string str in filteredStrings)
+    // Создание нового массива с отфильтрованными строками
+    string[] outputArray = new string[count];
+    int index = 0;
+    for (int i = 0; i < inputArray.Length; i++)
+    {
+        if (inputArray[i].Length <= 3)
         {
-            Console.WriteLine(str);
+            outputArray[index] = inputArray[i];
+            index++;
         }
+    }
+    return outputArray;
+}
+string[] outputArray = FilterStrings(inputArray);
+Console.WriteLine("Результат:");
+foreach (string str in outputArray)
+{
+    Console.WriteLine(str);
+}
